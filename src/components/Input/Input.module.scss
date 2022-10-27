@@ -1,0 +1,22 @@
+.form-group {
+    margin-bottom: 6px;
+}
+.form-control {
+    border: 1px solid #bababa;
+    border-radius: 3px;
+
+    outline: none;
+    background-color: #fafafa;
+    padding: 9px 0 7px 8px;
+    width: 100%;
+    color: #262626;
+    font-size: 1.4rem;
+    &:focus-within {
+        border-color: rgb(138, 147, 155) !important;
+    }
+}
+
+.form-feedback {
+    font-size: 1.1rem;
+    color: rgb(235, 87, 87);
+}

@@ -1,0 +1,35 @@
+.menu-list {
+    width: 224px;
+}
+.menu-popper {
+    padding-top: 0;
+}
+
+.menu-body {
+    overflow-y: auto;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(38, 38, 38);
+    width: 100%;
+    border-radius: 0;
+    padding: 11px 16px;
+    line-height: 1.8rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-left: 0 !important;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+    &.separate {
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+    }
+    span {
+        display: flex;
+        margin-right: 10px;
+    }
+}

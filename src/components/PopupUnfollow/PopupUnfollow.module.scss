@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avatar {
+    padding-top: 35px;
+    div {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 0;
+    border-top: 1px solid rgb(219, 219, 219);
+}

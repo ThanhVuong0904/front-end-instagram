@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+
+    .item {
+        font-size: 1.2rem;
+        color: #8e8e8e;
+        cursor: pointer;
+        padding: 5px 10px;
+        // &:not(:last-child) {
+        //     margin-right: 16px;
+        // }
+        &:hover {
+            color: #00376b;
+            transition: all 0.2s linear;
+        }
+    }
+}

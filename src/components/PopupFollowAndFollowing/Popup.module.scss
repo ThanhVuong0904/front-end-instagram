@@ -1,0 +1,40 @@
+.heading {
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.container {
+    min-height: 400px;
+    overflow-y: auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+
+    .avatar {
+        width: 54px;
+        height: 54px;
+        margin-right: 12px;
+    }
+
+    .username {
+        display: block;
+        color: rgb(38, 38, 38);
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+
+    .name {
+        color: rgb(142, 142, 142);
+        font-weight: 400;
+        font-size: 1.4rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .btn-action {
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,40 @@
+@use "../../components/GlobalStyles/mixin.scss" as *;
+
+.wrapper {
+    @include flex(center, center);
+    border-top: 1px solid rgb(219, 219, 219);
+    height: 53px;
+}
+
+.tab-item {
+    @include flex(center, center);
+    height: 100%;
+    margin-right: 60px;
+    color: rgb(142, 142, 142);
+
+    cursor: pointer;
+    span {
+        display: flex;
+    }
+    .tab-title {
+        margin-left: 6px;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .tab-icon {
+        svg {
+            color: rgb(142, 142, 142);
+            fill: rgb(142, 142, 142);
+        }
+    }
+
+    &.active {
+        @include primaryTxt;
+
+        svg {
+            color: rgb(38, 38, 38);
+            fill: rgb(38, 38, 38);
+        }
+        border-top: 1px solid rgb(38, 38, 38);
+    }
+}

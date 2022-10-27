@@ -1,0 +1,49 @@
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    + .wrapper {
+        margin-top: 25px;
+    }
+}
+
+.user-name {
+    font-weight: 600;
+    color: rgb(38, 38, 38);
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.content {
+    white-space: pre-line;
+
+    .highlight {
+        color: rgb(0, 55, 107);
+        cursor: pointer;
+    }
+}
+.check {
+    width: 12px;
+    height: 12px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.container {
+    margin-left: 10px;
+    .user-name {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+}
+.time-ago {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(142, 142, 142);
+}
+
+.like-count,
+.reply {
+    color: rgb(142, 142, 142);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 10px;
+}

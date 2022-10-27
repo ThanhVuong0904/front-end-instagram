@@ -1,0 +1,27 @@
+.wrapper {
+    border: none;
+    border-top: 1px solid #dbdbdb;
+    background-color: transparent;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+}
+.addcomment-input {
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn-addcomment {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    color: rgb(0, 149, 246);
+    font-weight: 600;
+    font-size: 1.4rem;
+
+    &.disabled {
+        opacity: 0.3;
+    }
+}

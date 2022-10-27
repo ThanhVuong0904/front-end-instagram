@@ -1,0 +1,18 @@
+.post-actions {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+    z-index: 50;
+    cursor: pointer;
+    svg:not(:last-child) {
+        margin-right: 20px;
+    }
+    .post-icon {
+        &:hover {
+            color: #8e8e8e;
+            fill: #8e8e8e;
+        }
+    }
+}

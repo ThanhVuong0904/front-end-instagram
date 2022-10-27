@@ -1,0 +1,198 @@
+.wrapper {
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    max-width: 935px;
+    width: 100%;
+    margin: 0 auto 0;
+    height: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @media screen and (max-width: 767.98px) {
+        flex-direction: column;
+    }
+}
+
+.left {
+    position: relative;
+    background-image: url(../../assets/images/Login/container.png);
+    background-repeat: no-repeat;
+    background-position: -46px 0;
+    background-size: 468.32px 634.15px;
+    flex-basis: 380.32px;
+    height: 581.15px;
+    margin-bottom: 12px;
+    margin-right: 32px;
+    img {
+        position: absolute;
+        max-width: 100%;
+        height: 538.84px;
+        right: 19px;
+        top: 29px;
+        width: 250px;
+    }
+    @media screen and (max-width: 374.98px) {
+        display: none;
+    }
+    @media screen and (max-width: 767.98px) {
+        display: none;
+    }
+}
+
+.right {
+    max-width: 350px;
+    width: 100%;
+    flex: 1;
+    .wraper-form {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        padding: 0 40px 20px;
+        background-color: white;
+        border: 1px solid #dbdbdb;
+        .logo {
+            margin: 36px auto 0;
+            img {
+                max-width: 100%;
+                width: 175px;
+                object-fit: cover;
+            }
+        }
+        form {
+            margin-top: 30px;
+            .form-actions {
+                display: flex;
+                margin-top: 10px;
+            }
+            .btn-login {
+                display: inline-block;
+                width: 100%;
+                outline: none;
+                border: none;
+                border-radius: 3px;
+                padding: 3px 9px;
+                margin: 8px 0;
+                font-weight: 600;
+                font-size: 1.4rem;
+                color: white;
+                text-align: center;
+                cursor: pointer;
+                background-color: rgba(0, 149, 246);
+                text-transform: capitalize;
+                box-shadow: unset;
+                &.disabled {
+                    background-color: rgba(0, 149, 246, 0.3);
+                }
+            }
+        }
+
+        .divider {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 18px;
+            &-left,
+            &-right {
+                background-color: #dbdbdb;
+                width: 100px;
+                height: 1px;
+            }
+            &-content {
+                color: #8e8e8e;
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+        }
+
+        .login-facebook {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 8px 0;
+            color: #385185;
+            cursor: pointer;
+
+            svg {
+                font-size: 1.6rem;
+                margin-right: 5px;
+            }
+
+            span {
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+        }
+
+        .error-message {
+            color: rgba(var(--i30, 237, 73, 86), 1);
+            text-align: center;
+            font-size: 1.4rem;
+            margin: 10px 0;
+        }
+
+        .forgot-password {
+            color: #00376b;
+            font-size: 1.2rem;
+            line-height: 16px;
+            text-align: center;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+    }
+}
+
+.go-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 20px 0;
+    font-size: 1.4rem;
+    span {
+        color: #262626;
+    }
+    a {
+        color: #0095f6;
+        font-weight: 600;
+    }
+}
+
+.app-download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.app-title {
+    font-size: 1.4rem;
+    line-height: 18px;
+    margin: 10px 20px 10px 20px;
+    color: #262626;
+}
+
+.app-store {
+    display: flex;
+    margin: 10px 0 10px 0;
+    .app-logo {
+        height: 40px;
+    }
+    .app-logo:first-child {
+        margin-right: 6px;
+    }
+}
+
+.footer {
+    max-width: 935px;
+    margin: 20px auto 0;
+    padding-bottom: 50px;
+}

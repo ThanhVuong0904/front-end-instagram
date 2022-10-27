@@ -1,0 +1,18 @@
+.divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    &-left,
+    &-right {
+        background-color: #dbdbdb;
+        width: 100px;
+        height: 1px;
+    }
+    &-content {
+        color: #8e8e8e;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}

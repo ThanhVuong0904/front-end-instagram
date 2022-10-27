@@ -1,0 +1,82 @@
+.post-wrapper {
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 4px 8px 12px;
+
+    div {
+        display: flex;
+        align-items: center;
+        span {
+            margin-left: 10px;
+            color: rgb(38, 38, 38);
+            font-weight: 600;
+        }
+    }
+    .post-avatar {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.post-content {
+    padding: 0 12px;
+    white-space: pre-line;
+    .highlight {
+        color: rgb(0, 55, 107);
+    }
+}
+
+.post-image {
+    width: 100%;
+}
+
+.post-actions {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+    z-index: 999;
+    svg:not(:last-child) {
+        margin-right: 20px;
+    }
+    svg {
+        cursor: pointer;
+    }
+}
+
+.post-text-700 {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.post-view-comment {
+    color: rgb(142, 142, 142);
+    font-size: 1.4rem;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.post-publish {
+    font-weight: 400;
+    color: rgb(142, 142, 142);
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.custom-dots {
+    li button::before {
+        color: gray;
+        opacity: 1 !important;
+    }
+
+    li.slick-active button::before {
+        color: blue !important;
+    }
+}

@@ -1,0 +1,23 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // hidden -y bi giut giut
+    overflow: hidden;
+    margin: 20px 0 0;
+    // background-color: red;
+    svg {
+        width: 32px;
+        height: 32px;
+        animation: IGCoreSpinnerSpin12 1.2s steps(12) infinite;
+    }
+}
+
+@keyframes IGCoreSpinnerSpin12 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

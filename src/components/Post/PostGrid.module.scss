@@ -1,0 +1,52 @@
+.wrapper {
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    &:hover > .overlay {
+        display: flex;
+    }
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.info-item {
+    display: flex;
+    align-items: center;
+
+    svg {
+        width: 19px;
+        height: 19px;
+        path {
+            fill: white;
+        }
+    }
+    span {
+        color: white;
+        font-weight: 700;
+        margin-left: 7px;
+    }
+    + .info-item {
+        margin-left: 20px;
+    }
+}
+.icon-carousel {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

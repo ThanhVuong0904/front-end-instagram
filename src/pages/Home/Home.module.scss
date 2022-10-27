@@ -1,0 +1,39 @@
+.wrapper {
+    max-width: 975px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    max-width: 470px;
+    width: 100%;
+}
+.story {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px 0 16px 20px;
+}
+.story-item {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20px;
+    p {
+        color: rgb(var(--primary-text));
+        font-size: 1.2rem;
+        max-width: 74px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+.story-avatar {
+    width: 66px;
+    height: 66px;
+}
